@@ -1,0 +1,14 @@
+export {default as Navbar} from './elements/Navbar';
+export {default as Footer} from './elements/Footer';
+export {default as Main} from './shared/Main';
+export {default as Button} from './shared/Button';
+export {default as Hero} from './sections/Hero';
+export {default as CardHero} from './Cards/CardHero';
+export {default as Features} from './sections/Features';
+export {default as Trending} from './sections/Trending';
+export {default as Title} from './shared/Title';
+export {default as Card} from './Cards/Card';
+export {default as TopGames} from './sections/TopGames';
+export {default as Categories} from './sections/Categories';
+export {default as Cta} from './sections/Cta';
+export {default as TitlePage} from './shared/TitlePage';

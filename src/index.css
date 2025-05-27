@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+@theme {
+  --color-primary: #0071f8;
+  --color-primarh: #1a89f9;
+  --color-secondary: #ee626b;
+  --color-p: #4a4a4a;
+  --color-h: #1e1e1e;
+  --color-quinary: #eeeeee;
+  --color-senary: #1e1e1e;
+  --color-septenary: #f8f8f8;
+}
+
+@layer base {
+  a {
+    @apply text-white md:hover:bg-primarh md:hover:rounded-full md:p-3 max-md:text-h cursor-pointer no-underline max-md:hover:text-secondary;
+  }
+
+  button {
+    @apply bg-secondary hover:bg-primary text-white uppercase rounded-full cursor-pointer font-bold text-sm p-3;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-7;
+  }
+
+  .active {
+    @apply bg-transparent max-md:text-secondary md:bg-primarh md:rounded-full;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexColumn {
+    @apply flex flex-col;
+  }
+
+  .trnsform {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .gridColumns {
+    @apply grid grid-cols-2 lg:grid-cols-4 gap-8;
+  }
+}
+
+.openNav {
+    @apply max-md:block;
+  }
+
+  .openSpan1 {
+    @apply w-[33px] origin-top-left rotate-45;
+  }
+
+  .openSpan2 {
+    @apply max-md:hidden;
+  }
+
+  .openSpan3 {
+    @apply w-[33px] origin-bottom-left rotate-[-45deg];
+  }
+
+  .bgH {
+  background-image: url("./assets/images/banner-bg.jpg");
+}
+
+.bgTh {
+  background-image: url("./assets/images/page-heading-bg.jpg");
+}
+
+.bgF {
+  background-image: url("./assets/images/footer-bg.jpg");
+}
